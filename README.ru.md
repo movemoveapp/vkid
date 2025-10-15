@@ -5,7 +5,7 @@
 [![License](http://poser.pugx.org/movemoveapp/vkid/license)](https://packagist.org/packages/movemoveapp/vkid)
 [![PHP Version Require](http://poser.pugx.org/movemoveapp/vkid/require/php)](https://packagist.org/packages/movemoveapp/vkid)
 
-[На Русском](README.ru.md)
+[English Version](README.md)
 
 ```bash
 composer require movemoveapp/vkid
