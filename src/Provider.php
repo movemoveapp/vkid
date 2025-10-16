@@ -40,7 +40,7 @@ class Provider extends AbstractProvider
      *
      * @return array<int, string>
      */
-    protected function getScopes(): array
+    public function getScopes(): array
     {
         $cfg = config('services.vkid.scopes');
 
@@ -178,7 +178,7 @@ class Provider extends AbstractProvider
      * @param  string  $code
      * @return array<string, mixed>
      */
-    protected function getAccessTokenResponse($code): array
+    public function getAccessTokenResponse($code): array
     {
         $response = $this->getHttpClient()->post($this->getTokenUrl(), [
             'form_params' => $this->getTokenFields($code),

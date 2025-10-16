@@ -4,9 +4,9 @@ namespace MoveMoveApp\VKID;
 
 use SocialiteProviders\Manager\SocialiteWasCalled;
 
-class VKIDExtendSocialite
+final class VKIDExtendSocialite
 {
-    public function handle(SocialiteWasCalled $socialiteWasCalled): void
+    public function handle(SocialiteWasCalled $event): void
     {
         $event->extendSocialite('vkid', Provider::class);
     }
